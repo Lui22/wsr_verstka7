@@ -1,0 +1,297 @@
+.perfectpixel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0.6;
+
+    width: 100%;
+    height: 0;
+    padding-bottom: 56%;
+
+    background: url("../../5525349.png");
+    background-size: cover;
+
+    pointer-events: none;
+}
+
+body {
+    margin: 0;
+    background: #1a1b1c;
+}
+
+header {
+    margin: 50px 4vw 33px 5vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    height: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+}
+
+.socials-nav {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+}
+
+.socials-nav__link svg {
+    width: 30px;
+    height: 30px;
+}
+
+.header__search-bar {
+    width: 216px;
+    height: 47px;
+    border-radius: 25px;
+    padding: 0 1.5em;
+    margin-left: 22px;
+    margin-bottom: 13px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #40ff9a;
+}
+
+.header__search-bar__input {
+    border: none;
+    background: #40ff9a;
+    border-radius: 25px 0 0 25px;
+}
+
+.header__search-bar__icon {
+    width: 30px;
+    height: 30px;
+}
+
+.header__nav {
+    display: flex;
+    width: 669px;
+    justify-content: space-between;
+}
+
+.header__nav-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+
+    height: 60px;
+
+    color: #fff;
+    text-decoration: none;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: start;
+
+    transition: all .3s ease-in;
+}
+
+.header__nav-link::after {
+    position: absolute;
+
+    bottom: 60px;
+
+    transition: all .3s ease-in;
+}
+
+.header__nav-link:hover:after  {
+    content: "";
+    width: 125%;
+    height: 1px;
+    background: #40ff9a;
+
+    bottom: 17px;
+
+    transition: all .3s ease-in;
+}
+
+.header__nav-link img {
+    width: 30px;
+    height: 30px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.offers-section {
+    margin-top: -14px;
+    padding: 0 75px 0 90px;
+
+    display: flex;
+    align-items: center;
+
+    column-gap: 121px;
+}
+
+.offers__text {
+    max-width: 41%;
+}
+
+.offers__title {
+    margin: 40px 0 0;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 78px;
+
+    letter-spacing: 13px;
+    word-spacing: 1px;
+    line-height: 79px;
+    
+    color: #fff;
+}
+
+.offers__subtitle {
+    margin: 0;
+
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: -0.024em;
+
+    font-size: 42px;
+    font-weight: 500;
+
+    color: #fff;
+}
+
+.call-to-action {
+    margin-top: 40px;
+    padding: 0.3em 7em 0.3em .4em;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+
+    font-size: 36px;
+
+    letter-spacing: -.01em;
+
+    background: #40ff9a;
+    width: max-content;
+}
+
+.offers__details {
+    margin-top: 34px;
+    width: 95%;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+
+    letter-spacing: -0.013em;
+    line-height: 40px;
+    font-size: 28px;
+
+    color: #fff;
+}
+
+.offers__items {
+    width: 905px;
+    padding-top: 79px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offers__item-img {
+    margin-bottom: 21px;
+}
+
+.offers__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 27px;
+}
+
+.offers__item-name {
+    padding: 0.4em 1.5em 0.2em;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+
+    font-size: 36px;
+
+    letter-spacing: .08em;
+
+    background: #40ff9a;
+    width: max-content;
+}
+
+.offers__item-price {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 54px;
+
+    color: #fff;
+}
+
+.shapes {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: absolute;
+    bottom: -69%;
+}
+
+.shape {
+    position: relative;
+
+    overflow: clip;
+    display: block;
+}
+
+.shape_bottom-left {
+    width: 381px;
+}
+
+.shape_bottom {
+    width: 505px;
+
+    position: relative;
+    left: -2vw;
+}
+
+.shape_bottom-right {
+    width: 515px;
+}
+
+.shape_plus {
+    width: 36px;
+}
+
+.shape_plus_top {
+    left: 798px;
+    bottom: 221px;
+}
+
+.shape_plus_bottom {
+    left: 798px;
+    bottom: 196px;
+}
+
+.shape_pluses {
+    width: 220px;
+
+    left: 480px;
+    bottom: 371px;
+}
+
+.shape_particles {
+    width: 84px;
+
+    bottom: 578px;
+    left: 816px;
+}
