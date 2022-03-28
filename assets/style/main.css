@@ -18,6 +18,7 @@
 body {
     margin: 0;
     background: #1a1b1c;
+    position: relative;
 }
 
 header {
@@ -243,7 +244,7 @@ header {
     justify-content: space-between;
     align-items: end;
     position: absolute;
-    bottom: -69%;
+    bottom: 0;
 }
 
 .shape {
