@@ -15,6 +15,10 @@
     pointer-events: none;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     background: #1a1b1c;
@@ -123,8 +127,11 @@ header {
 }
 
 .image {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 325px;
+
+    background: url("../img/img.png");
+    background-size: cover;
 }
 
 .offers-section {
@@ -168,7 +175,7 @@ header {
 
 .call-to-action {
     margin-top: 40px;
-    padding: 0.3em 7em 0.3em .4em;
+    padding: 0.3em 10vh 0.3em .4em;
 
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -202,10 +209,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+    flex-wrap: wrap;
 
-.offers__item-img {
-    margin-bottom: 21px;
+    row-gap: 50px;
 }
 
 .offers__item {
@@ -214,6 +220,11 @@ header {
     align-items: center;
 
     row-gap: 27px;
+}
+
+
+.offers__item-img {
+    margin-bottom: 21px;
 }
 
 .offers__item-name {
@@ -295,4 +306,115 @@ header {
 
     bottom: 578px;
     left: 816px;
+}
+
+@media screen and (max-width: 1630px){
+    .offers__item {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    header {
+        flex-wrap: wrap;
+        row-gap: 30px;
+        margin: 50px 4vw 15px 5vw;
+    }
+
+    .header__nav {
+        flex-basis: 100%;
+    }
+
+    .offers-section {
+        flex-wrap: wrap;
+        padding: 0 10vw;
+    }
+
+    .offers__text {
+        max-width: 95%;
+    }
+
+    .offers__items {
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+
+    .offers__item {
+        flex-basis: initial;
+    }
+
+    .call-to-action {
+        padding: 0.3em 2em 0.3em .4em;
+
+        max-width: 79%;
+    }
+
+    .shape_bottom-right {
+        display: none;
+    }
+
+    .shape_particles {
+        bottom: 130vh;
+    }
+
+    .shape_pluses {
+        bottom: 65vh;
+    }
+
+    .shape_plus_top {
+        bottom: 97vh;
+    }
+
+    .shape_plus_bottom {
+        bottom: 95vh;
+    }
+}
+
+@media screen and (max-width: 899px){
+    .shape_bottom-left {
+        display: none;
+    }
+
+    .shape_plus_top {
+        left: 80vw;
+    }
+
+    .shape_plus_bottom {
+        left: 80vw;
+    }
+
+    .shape_particles {
+        left: 80vw;
+        bottom: 200vh;
+    }
+}
+
+@media screen and (max-width: 929px){
+    .offers__item {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header {
+        justify-content: center;
+    }
+
+    .header__logo {
+        margin-right: 0;
+    }
+
+    .offers-section {
+        padding: 0 5vw;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .header__nav {
+        flex-wrap: wrap;
+    }
+
+    .header__nav-link {
+        flex-basis: 100%;
+    }
 }
