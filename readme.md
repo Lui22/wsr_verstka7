@@ -1,4 +1,6 @@
 # Pixel-perfect верстка макета
+[ссылка на страницу](https://chrt.ddns.net/verstka/7)
+
 `Shift`+`H` для переключения видимости макета
 
 ![mockup.jpg](materials/mockup.jpg)
