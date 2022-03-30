@@ -8,10 +8,10 @@
     <title>travel agency</title>
     <link href="assets/style/main.css" rel="stylesheet">
     <link href="assets/style/fonts.css" rel="prefetch stylesheet">
+    <script src="assets/js/pixelperfect-switch.js"></script>
 </head>
+<div class="pixelperfect" style="display:none;"></div>
 <body>
-<div class="perfectpixel"></div>
-
 <header>
     <img alt="logo" class="header__logo" src="assets/img/logo.png">
     <nav class="socials-nav">
@@ -169,7 +169,9 @@
     </nav>
 
     <div class="header__search-bar">
-        <input class="header__search-bar__input" type="text">
+        <label>
+            <input class="header__search-bar__input" type="text">
+        </label>
         <img alt="magnifier icon" class="header__search-bar__icon" src="assets/img/magnifier.png">
     </div>
 
@@ -218,10 +220,11 @@
     <img alt="" class="shape shape_bottom" src="assets/img/shapes/Shape.png">
     <img alt="" class="shape shape_bottom-right" src="assets/img/shapes/Shape-2.png">
 </div>
-
-<img alt="" class="shape shape_plus shape_plus_top" src="assets/img/shapes/Shape-3.png">
-<img alt="" class="shape shape_plus shape_plus_bottom" src="assets/img/shapes/Shape-4.png">
-<img alt="" class="shape shape_pluses" src="assets/img/shapes/Shape-5.png">
-<img alt="" class="shape shape_particles" src="assets/img/shapes/Shape-6.png">
+<div style="position:absolute;height: 0;bottom: 90px;">
+    <img alt="" class="shape shape_plus shape_plus_top" src="assets/img/shapes/Shape-3.png">
+    <img alt="" class="shape shape_plus shape_plus_bottom" src="assets/img/shapes/Shape-4.png">
+    <img alt="" class="shape shape_pluses" src="assets/img/shapes/Shape-5.png">
+    <img alt="" class="shape shape_particles" src="assets/img/shapes/Shape-6.png">
+</div>
 </body>
 </html>

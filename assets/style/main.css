@@ -1,4 +1,4 @@
-.perfectpixel {
+.pixelperfect {
     position: absolute;
     top: 0;
     left: 0;
@@ -9,7 +9,7 @@
     height: 0;
     padding-bottom: 56%;
 
-    background: url("../../5525349.png");
+    background: url("../../materials/layout.png");
     background-size: cover;
 
     pointer-events: none;
@@ -26,7 +26,7 @@ body {
 }
 
 header {
-    margin: 50px 4vw 33px 5vw;
+    padding: 50px 4vw 33px 5vw;
 
     display: flex;
     flex-direction: row;
@@ -185,7 +185,7 @@ header {
     letter-spacing: -.01em;
 
     background: #40ff9a;
-    width: max-content;
+    width: 75%;
 }
 
 .offers__details {
@@ -255,7 +255,9 @@ header {
     justify-content: space-between;
     align-items: end;
     position: absolute;
-    bottom: 0;
+    bottom: -90px;
+
+    pointer-events: none;
 }
 
 .shape {
@@ -286,26 +288,26 @@ header {
 
 .shape_plus_top {
     left: 798px;
-    bottom: 221px;
+    bottom: 128px;
 }
 
 .shape_plus_bottom {
     left: 798px;
-    bottom: 196px;
+    bottom: 104px;
 }
 
 .shape_pluses {
     width: 220px;
 
     left: 480px;
-    bottom: 371px;
+    bottom: 278px;
 }
 
 .shape_particles {
     width: 84px;
 
-    bottom: 578px;
     left: 816px;
+    bottom: 485px;
 }
 
 @media screen and (max-width: 1630px){
